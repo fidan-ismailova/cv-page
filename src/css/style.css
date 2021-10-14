@@ -13,7 +13,9 @@ article {
 
 .body-bg {
     background-image: url('../images/bg_metal.jpg');
-    background-size: cover;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .color-grey {
@@ -33,9 +35,11 @@ article {
 }
 .cv-left a {
     color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .cv-left a:hover {
-    /* text-decoration: none; */
     color: #fff;
 }
 .cv-left ul {
@@ -46,11 +50,15 @@ article {
     list-style: none;
     padding: 0;
 }
+.cv-left ul.contacts-block .icon {
+    margin: 5px;
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+}
 .cv-left .address {
     font-style: italic;
 }
-
-.photo-block {}
 
 .cv-right {
     background: #fff;
