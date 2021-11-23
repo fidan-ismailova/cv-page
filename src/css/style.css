@@ -12,6 +12,7 @@ article {
 }
 
 .body-bg {
+    min-height: 100vh;
     background-image: url('../images/bg_metal.jpg');
     background-size: 100% 100%;
     background-repeat: no-repeat;
