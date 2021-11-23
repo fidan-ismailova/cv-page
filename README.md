@@ -1,2 +1,2 @@
-# CV
+# CV template
 ## Gulp Bootstrap Project
