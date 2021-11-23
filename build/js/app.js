@@ -22,13 +22,17 @@ const formatPhone = (phone) => {
     let phoneStr = phone.substring(0,4) + ' (xx) xxx-xx-xx';
     return phoneStr;
 }
+const formatEmail = (email) => {
+    let emailStr = email.substring(0,1) + '***' + email.substring(email.length - 10, email.length);
+    return emailStr;
+}
 const imgTemplate = (img) => {
     let imgSrc = `<span class="icon" style="-webkit-mask: url('${img}') no-repeat center; mask: url('${img}') no-repeat center"></span>`;
     return imgSrc;
 }
 
 document.querySelector('.contacts-block').innerHTML += `<li><a href="tel:${data.phone}">${formatPhone(data.phone) + imgTemplate(data.phone_icon)}</a></li>`
-document.querySelector('.contacts-block').innerHTML += `<li><a href="mailto:${data.email}">${data.email + imgTemplate(data.email_icon)}</a></li>`
+document.querySelector('.contacts-block').innerHTML += `<li><a href="mailto:${data.email}">${formatEmail(data.email) + imgTemplate(data.email_icon)}</a></li>`
 document.querySelector('.contacts-block').innerHTML += `<li><a href="callto:${data.skype}">${data.skype_name + imgTemplate(data.skype_icon)}</a></li>`
 document.querySelector('.contacts-block').innerHTML += `<li><a href="${data.linkedin}" target="_blank">${data.linkedin_name + imgTemplate(data.linkedin_icon)}</a></li>`
 document.querySelector('.address').innerHTML = `<p>${data.address}</p>`;
