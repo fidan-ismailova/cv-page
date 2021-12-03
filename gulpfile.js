@@ -8,11 +8,13 @@ const {
 
 // Load plugins
 
-const cssnano = require('gulp-cssnano');
-const changed = require('gulp-changed');
 const browsersync = require('browser-sync').create();
-const imagemin = require('gulp-imagemin');
 const clean = require('gulp-clean');
+const changed = require('gulp-changed');
+const cssnano = require('gulp-cssnano');
+const uglify = require("gulp-uglify-es").default;
+const rename = require("gulp-rename");
+const imagemin = require('gulp-imagemin');
 
 
 
@@ -31,17 +33,28 @@ function css() {
     return src(source)
         .pipe(changed(source))
         .pipe(cssnano())
+        .pipe(
+            rename({
+                extname: ".min.css"
+            })
+        )
         .pipe(dest('./build/css/'))
         .pipe(browsersync.stream());
 }
 
-// CSS 
+// javascript
 
 function js() {
     const source = './src/js/*';
 
     return src(source)
         .pipe(changed(source))
+        .pipe(uglify())
+        .pipe(
+            rename({
+                extname: ".min.js"
+            })
+        )
         .pipe(dest('./build/js/'))
         .pipe(browsersync.stream());
 }

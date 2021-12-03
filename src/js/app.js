@@ -19,11 +19,12 @@ document.querySelector('.experience-list').innerHTML = expirienceData;
  */
 const formatPhone = (phone) => {
     // let phoneStr = phone.substring(0,4) + ' (' + phone.substring(4,6) + ') ' + phone.substring(6,9) + '-' + phone.substring(9,11) + '-' + phone.substring(11,13);
-    let phoneStr = phone.substring(0,4) + ' (xx) xxx-xx-xx';
+    // let phoneStr = phone.substring(0,4) + ' (xx) xxx-xx-xx';
+    let phoneStr = phone.substring(0,4) + ' (xx) xxx-xx-' + phone.slice(-2);
     return phoneStr;
 }
 const formatEmail = (email) => {
-    let emailStr = email.substring(0,1) + '***' + email.substring(email.length - 10, email.length);
+    let emailStr = email.substring(0,1) + '***' + email.slice(-10);
     return emailStr;
 }
 const imgTemplate = (img) => {
@@ -33,7 +34,7 @@ const imgTemplate = (img) => {
 
 document.querySelector('.contacts-block').innerHTML += `<li><a href="tel:${data.phone}">${formatPhone(data.phone) + imgTemplate(data.phone_icon)}</a></li>`
 document.querySelector('.contacts-block').innerHTML += `<li><a href="mailto:${data.email}">${formatEmail(data.email) + imgTemplate(data.email_icon)}</a></li>`
-document.querySelector('.contacts-block').innerHTML += `<li><a href="callto:${data.skype}">${data.skype_name + imgTemplate(data.skype_icon)}</a></li>`
+/*document.querySelector('.contacts-block').innerHTML += `<li><a href="callto:${data.skype}">${data.skype_name + imgTemplate(data.skype_icon)}</a></li>`*/
 document.querySelector('.contacts-block').innerHTML += `<li><a href="${data.linkedin}" target="_blank">${data.linkedin_name + imgTemplate(data.linkedin_icon)}</a></li>`
 document.querySelector('.address').innerHTML = `<p>${data.address}</p>`;
 document.querySelector('#my-photo').src = data.photo;
