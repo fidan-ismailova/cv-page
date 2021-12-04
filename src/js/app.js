@@ -36,6 +36,7 @@ document.querySelector('.contacts-block').innerHTML += `<li><a href="tel:${data.
 document.querySelector('.contacts-block').innerHTML += `<li><a href="mailto:${data.email}">${formatEmail(data.email) + imgTemplate(data.email_icon)}</a></li>`
 /*document.querySelector('.contacts-block').innerHTML += `<li><a href="callto:${data.skype}">${data.skype_name + imgTemplate(data.skype_icon)}</a></li>`*/
 document.querySelector('.contacts-block').innerHTML += `<li><a href="${data.linkedin}" target="_blank">${data.linkedin_name + imgTemplate(data.linkedin_icon)}</a></li>`
+document.querySelector('.contacts-block').innerHTML += `<li><a href="${data.github_url}" target="_blank">${data.github_name + imgTemplate(data.github_icon)}</a></li>`
 document.querySelector('.address').innerHTML = `<p>${data.address}</p>`;
 document.querySelector('#my-photo').src = data.photo;
 

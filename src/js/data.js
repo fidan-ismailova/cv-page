@@ -13,6 +13,9 @@ const data = {
     "linkedin": "https://www.linkedin.com/in/fidan-ismailova-13637a20b/",
     "linkedin_name": "LinkedIn",
     "linkedin_icon": "./images/linkedin-brands.svg",
+    "github_url": "https://github.com/fidan-ismailova",
+    "github_name": "GitHub",
+    "github_icon": "./images/github-brands.svg",
     "address": "Azerbaijan, Baku",
     "skills": [
         "HTML, CSS, SASS/SCSS",
