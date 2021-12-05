@@ -29,9 +29,9 @@ const data = {
     "address": "Azerbaijan, Baku",
     "skills": [
         "HTML, CSS, SASS/SCSS",
-        "javascript, jQuery, NodeJS",
-        "Basic knowledges: JavaSE, php, SQL, C, algorithms",
-        "Project Management basics, git, Trello",
+        "javascript, jQuery, Node.js, Gulp",
+        "git, Trello",
+        "Basic knowledges: ReactJS, Java SE, php, SQL, C, algorithms",
         "Figma, Photoshop, Coreldraw",
         "Microsoft Office",
         "Russian: Fluent",
