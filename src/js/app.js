@@ -18,7 +18,7 @@ document.querySelector('.experience-list').innerHTML = expirienceData;
  * contact data
  */
 const formatPhone = (phone) => {
-    let phoneStr = phone.substring(0,4) + ' (xx) xxx-xx-' + phone.slice(-2);
+    let phoneStr = phone.substring(0,4) + ' (' + phone.slice(4,6) + ') xxx-xx-' + phone.slice(-2);
     return phoneStr;
 }
 const formatEmail = (email) => {
