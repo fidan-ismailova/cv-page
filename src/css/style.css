@@ -39,9 +39,13 @@ article {
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: all 0.3s ease-in-out;
 }
 .cv-left a:hover {
     color: #fff;
+    background-color: rgba(255, 255, 255, .1);
+    text-decoration: none;
+    text-shadow: 1px 2px 3px #666;
 }
 .cv-left ul {
     line-height: 175%;
