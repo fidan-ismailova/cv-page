@@ -12,7 +12,7 @@ const data = {
         "icon": "./images/envelope-square-solid.svg",
     },
     "skype": {
-        "url": "skype.example",
+        "login": "live:.cid.351041ef015f576e",
         "name": "Skype",
         "icon": "./images/skype-brands.svg",
     },

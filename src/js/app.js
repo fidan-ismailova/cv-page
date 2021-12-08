@@ -32,7 +32,7 @@ const imgTemplate = (img) => {
 
 document.querySelector('.contacts-block').innerHTML += `<li><a href="tel:${data.phone.tel}">${formatPhone(data.phone.tel) + imgTemplate(data.phone.icon)}</a></li>`
 document.querySelector('.contacts-block').innerHTML += `<li><a href="mailto:${data.email.address}">${formatEmail(data.email.address) + imgTemplate(data.email.icon)}</a></li>`
-// document.querySelector('.contacts-block').innerHTML += `<li><a href="callto:${data.skype.url}">${data.skype.name + imgTemplate(data.skype.icon)}</a></li>`
+document.querySelector('.contacts-block').innerHTML += `<li><a href="skype:${data.skype.login}?chat">${data.skype.name + imgTemplate(data.skype.icon)}</a></li>`
 document.querySelector('.contacts-block').innerHTML += `<li><a href="${data.linkedin.url}" target="_blank">${data.linkedin.name + imgTemplate(data.linkedin.icon)}</a></li>`
 document.querySelector('.contacts-block').innerHTML += `<li><a href="${data.github.url}" target="_blank">${data.github.name + imgTemplate(data.github.icon)}</a></li>`
 document.querySelector('.address').innerHTML = `<p>${data.address}</p>`;
