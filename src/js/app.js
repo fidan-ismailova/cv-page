@@ -9,7 +9,11 @@ experience.forEach(item => {
     expirienceData += `<section class="mb-5">`;
     expirienceData += ` <h4 class="company-name mb-2">${item.company} - ${item.city}, <i>${item.from} - ${item.to}</i></h4>`;
     expirienceData += `<h5>${item.position}</h5>`;
-    expirienceData += `<p>${item.description}</p>`;
+    let expDescArr = '';
+    for (let i of item.description) {
+        expDescArr += i + '<br>';
+    }
+    expirienceData += `<p>${expDescArr}</p>`;
     expirienceData += `</section>`;
 });
 document.querySelector('.experience-list').innerHTML = expirienceData;
