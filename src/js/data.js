@@ -29,9 +29,9 @@ const data = {
     "address": "Azerbaijan, Baku",
     "skills": [
         "HTML, CSS, SASS/SCSS",
-        "javascript, jQuery, Node.js, Gulp",
+        "javascript, Node.js, Gulp",
         "git, Trello",
-        "Basic knowledges: ReactJS, Java SE, php, SQL, C, algorithms",
+        "Basic knowledges: ReactJS, Bootstrap, jQuery, Java SE, php, SQL, C, algorithms",
         "Figma, Photoshop, Coreldraw",
         "Microsoft Office",
         "Russian: Fluent",
@@ -40,9 +40,12 @@ const data = {
     ],
     "education": [
         ["National Aviation Academy (engineer)", "2004-2009"],
+        ["COURSES: Step IT Academy (JavaSE)", "oct.2020-apr.2021"],
+        ["COURSES: Dev.Education (Frontend)", "jul.2021-sep.2021"],
+        ["COURSES: itGid.info (Frontend, Javascript)", "oct.2021-dec.2021"]
     ],
     "achievements": [
         "qwerty","qwerty","qwerty"
     ],
-    "profile": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem quasi dolor rem, accusamus similique cupiditate, architecto eveniet soluta totam provident officiis! Quis totam reiciendis ducimus quas, quam vel eos cumque."
+    "profile": "Junior FrontEnd/FullStack Developer. I like programming. Development for me is more than job - it\'s my hobby. I am constantly improving my skills and learning new tech stack."
 };
